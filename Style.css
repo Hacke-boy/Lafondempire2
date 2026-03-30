@@ -1,0 +1,85 @@
+:root {
+    --black: #050505;
+    --silver: #C0C0C0;
+    --dark-grey: #1a1a1a;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--silver);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    border-bottom: 1px solid var(--dark-grey);
+}
+
+.brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    color: var(--white);
+}
+
+nav a {
+    color: var(--silver);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+#hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.monogram {
+    font-size: 5rem;
+    border: 2px solid var(--silver);
+    padding: 20px 40px;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 12px;
+    color: var(--white);
+}
+
+.ia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.card {
+    background: var(--dark-grey);
+    padding: 30px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: var(--silver);
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    font-size: 0.7rem;
+    border-top: 1px solid var(--dark-grey);
+}
+
